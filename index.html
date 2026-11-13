@@ -17,9 +17,12 @@ h3{color:var(--teal);font-size:1.1rem;margin:20px 0 6px}
 ul{padding-left:1.2em;margin:6px 0} li{margin:4px 0}
 .cats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .card{background:var(--tint);border-radius:12px;padding:0 0 12px;overflow:hidden}
+.card-head{display:block}
 .card img.portrait{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;display:block}
-.card h3,.card .sub,.card ul{padding-left:14px;padding-right:14px}
+.card-id{padding-left:14px;padding-right:14px}
+.card ul{padding-left:calc(14px + 1.15em);padding-right:14px;margin:4px 0 0}
 .card h3{margin:10px 0 0}
+.card .sub{margin:0 0 4px}
 .checklist{list-style:none;padding:0}
 .checklist li{border:1px solid #d5e6e8;border-radius:10px;margin:8px 0}
 .checklist label{display:flex;gap:12px;padding:10px 12px;cursor:pointer;align-items:flex-start}
@@ -39,7 +42,16 @@ figcaption{color:var(--muted);font-style:italic;font-size:.92rem;margin-top:4px}
 ol.steps{padding-left:1.4em;margin:6px 0} ol.steps li{margin:6px 0}
 .dl{text-align:center;margin:10px 0} .dl a{color:var(--teal)}
 footer{text-align:center;color:var(--teal);font-style:italic;margin-top:30px}
-@media (max-width:560px){.cats,.figs{grid-template-columns:1fr} h1{font-size:1.7rem}}
+@media (max-width:600px){
+ .cats,.figs{grid-template-columns:1fr}
+ h1{font-size:1.7rem}
+ .card{padding:12px 14px}
+ .card-head{display:flex;align-items:center;gap:12px;margin:0 0 6px}
+ .card img.portrait{width:88px;height:88px;aspect-ratio:1;border-radius:50%;flex:none}
+ .card-id{padding-left:0;padding-right:0}
+ .card h3{margin:0}
+ .card ul{padding-left:1.2em;padding-right:0;width:100%;margin:2px 0 0}
+}
 @media print{body{background:#fff;font-size:12pt} main{max-width:none;padding:0} nav,.reset,.dl{display:none}
  h2{break-after:avoid} figure,.card,.callout,.checklist li{break-inside:avoid} .figs figure img{max-height:3in;width:auto;margin:0 auto} .litter-fig img{max-height:none;width:100%}}
 </style></head>
@@ -51,13 +63,17 @@ footer{text-align:center;color:var(--teal);font-style:italic;margin-top:30px}
 
 <h2 id="cats">Meet the Cats</h2>
 <div class="cats">
-<div class="card"><img class="portrait" src="img/luke.jpg" alt="Luke, a solid grey cat with green eyes" width="720" height="900">
-<h3>Luke</h3><div class="sub" style="margin:0 0 4px;font-size:.95rem">Boy, solid grey</div><ul>
+<div class="card">
+<div class="card-head"><img class="portrait" src="img/luke.jpg" alt="Luke, a solid grey cat with green eyes" width="720" height="900">
+<div class="card-id"><h3>Luke</h3><div class="sub" style="font-size:.95rem">Boy, solid grey</div></div></div>
+<ul>
 <li>Has <b>no teeth</b>, so his food must be broken into small pieces.</li>
 <li>A &ldquo;scarf and barf&rdquo; cat: eats too fast, then throws up.</li>
 <li>Sometimes sleeps through the auto feeder.</li></ul></div>
-<div class="card"><img class="portrait" src="img/leia.jpg" alt="Leia, a grey cat with a white chest and paws" width="720" height="900">
-<h3>Leia</h3><div class="sub" style="margin:0 0 4px;font-size:.95rem">Grey with white</div><ul>
+<div class="card">
+<div class="card-head"><img class="portrait" src="img/leia.jpg" alt="Leia, a grey cat with a white chest and paws" width="720" height="900">
+<div class="card-id"><h3>Leia</h3><div class="sub" style="font-size:.95rem">Grey with white</div></div></div>
+<ul>
 <li>A little chubby; we&rsquo;re watching her weight.</li>
 <li>Will eat any food left lying around.</li>
 <li>Sometimes walks away from her bowl before she&rsquo;s done.</li></ul></div>
