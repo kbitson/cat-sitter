@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cat Sitter Guide: Luke &amp; Leia</title>
+<style>
+:root{--teal:#1f6f78;--tint:#eaf4f5;--ink:#333;--muted:#666;--warn:#fff4e0;--warnb:#f0b860}
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#f6f8f8}
+main{max-width:760px;margin:0 auto;padding:16px 16px 48px;background:#fff}
+header{text-align:center;padding:20px 0 6px}
+h1{color:var(--teal);font-size:2rem;margin:0}
+.sub{color:var(--muted);margin:2px 0 10px;font-size:1.1rem}
+nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:12px 0 4px}
+nav a{background:var(--tint);color:var(--teal);text-decoration:none;padding:6px 12px;border-radius:999px;font-size:.92rem;font-weight:600}
+h2{color:var(--teal);font-size:1.4rem;margin:30px 0 8px;padding-bottom:4px;border-bottom:2px solid var(--tint)}
+h3{color:var(--teal);font-size:1.1rem;margin:20px 0 6px}
+ul{padding-left:1.2em;margin:6px 0} li{margin:4px 0}
+.cats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{background:var(--tint);border-radius:12px;padding:12px 14px}
+.card h3{margin:0 0 4px}
+.checklist{list-style:none;padding:0}
+.checklist li{border:1px solid #d5e6e8;border-radius:10px;margin:8px 0}
+.checklist label{display:flex;gap:12px;padding:10px 12px;cursor:pointer;align-items:flex-start}
+.checklist input{width:22px;height:22px;margin-top:3px;flex:none;accent-color:var(--teal)}
+.checklist b{display:block;color:var(--teal)}
+.checklist input:checked+span{opacity:.5;text-decoration:line-through}
+.reset{background:none;border:1px solid var(--teal);color:var(--teal);border-radius:8px;padding:6px 12px;font:inherit;font-size:.9rem}
+.callout{background:var(--warn);border-left:5px solid var(--warnb);border-radius:8px;padding:10px 14px;margin:10px 0}
+.callout strong:first-child{color:#8a5a00}
+.figs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+figure{margin:0;text-align:center}
+figure img{width:100%;height:auto;border-radius:10px;display:block}
+figcaption{color:var(--muted);font-style:italic;font-size:.92rem;margin-top:4px}
+.ph{background:#eee;border-radius:10px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;color:#999}
+.litter{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;align-items:start}
+ol.steps{padding-left:1.4em} ol.steps li{margin:6px 0}
+.notes p{border-bottom:1px solid #bbb;padding:14px 0 2px;margin:0}
+.dl{text-align:center;margin:10px 0} .dl a{color:var(--teal)}
+footer{text-align:center;color:var(--teal);font-style:italic;margin-top:30px}
+@media (max-width:560px){.cats,.figs,.litter{grid-template-columns:1fr} h1{font-size:1.7rem}}
+@media print{body{background:#fff;font-size:12pt} main{max-width:none;padding:0} nav,.reset,.dl{display:none}
+ h2{break-after:avoid} figure,.card,.callout,.checklist li,.litter{break-inside:avoid} figure img{max-height:3in;width:auto;margin:0 auto}}
+</style></head>
+<body><main>
+<header><h1>Cat Sitter Guide</h1><p class="sub">Taking care of Luke &amp; Leia</p>
+<p>Thank you so much for looking after our cats! Start with the daily checklist below. The sections after it have the details.</p>
+<nav><a href="#checklist">Checklist</a><a href="#feeding">Feeding</a><a href="#litter">Litter</a><a href="#trash">Trash</a><a href="#notes">Notes</a></nav>
+<p class="dl"><a href="Cat_Sitter_Guide.pdf">Download printable PDF</a></p></header>
+
+<h2 id="cats">Meet the Cats</h2>
+<div class="cats">
+<div class="card"><h3>Luke</h3><div class="sub" style="margin:0 0 4px;font-size:.95rem">Boy, solid grey</div><ul>
+<li>Has <b>no teeth</b>, so his food must be broken into small pieces.</li>
+<li>A &ldquo;scarf and barf&rdquo; cat: eats too fast, then throws up.</li>
+<li>Sometimes sleeps through the auto feeder.</li></ul></div>
+<div class="card"><h3>Leia</h3><div class="sub" style="margin:0 0 4px;font-size:.95rem">Grey with white</div><ul>
+<li>A little chubby; we&rsquo;re watching her weight.</li>
+<li>Will eat any food left lying around.</li>
+<li>Sometimes walks away from her bowl before she&rsquo;s done.</li></ul></div>
+</div>
+
+<h2 id="checklist">Daily Checklist</h2>
+<ul class="checklist">
+<li><label><input type="checkbox"><span><b>Morning</b>Canned food: 2 spoons each. Break up both portions; spread Luke's out.</span></label></li>
+<li><label><input type="checkbox"><span><b>Morning</b>Scoop both litter boxes.</span></label></li>
+<li><label><input type="checkbox"><span><b>After meals</b>Wash the bowls right away (much easier while fresh).</span></label></li>
+<li><label><input type="checkbox"><span><b>Midday (optional)</b>Scoop litter again if you can. Skipping it is fine.</span></label></li>
+<li><label><input type="checkbox"><span><b>All day</b>Auto feeder goes off every 3 hours from 6 AM (skips 6 PM). If Luke doesn't show, put the kibble back in the feeder.</span></label></li>
+<li><label><input type="checkbox"><span><b>Evening</b>Canned food: 2 spoons each, same as the morning.</span></label></li>
+<li><label><input type="checkbox"><span><b>Evening</b>Scoop both litter boxes.</span></label></li>
+<li><label><input type="checkbox"><span><b>Thu / Mon night</b>Trash out Thursday night (Friday pickup); recycling out Monday night (Tuesday pickup).</span></label></li>
+</ul>
+<button class="reset" type="button" onclick="document.querySelectorAll('.checklist input').forEach(function(c){c.checked=false})">Clear checklist</button>
+
+<h2 id="feeding">Feeding</h2>
+<h3>Auto Feeder (Kibble)</h3><ul>
+<li>Goes off <b>every 3 hours during the day, starting at 6 AM</b>. It <b>skips 6 PM</b>.</li>
+<li>Luke sometimes sleeps through it. If you hear it go off and he doesn&rsquo;t show up, <b>dump the kibble back into the feeder</b>.</li>
+<li>Otherwise Leia will eat it. That&rsquo;s not a disaster, but we&rsquo;re trying to watch her weight.</li></ul>
+
+<h3>Canned Food (Twice a Day)</h3><ul>
+<li>The open can is <b>in the fridge</b> with a <b>blue reusable top</b>. Extra cans are <b>in the pantry</b>.</li>
+<li>A <b>new shipment</b> of canned food arrives <b>Wednesday</b>.</li>
+<li>Each cat gets <b>2 spoons</b> per meal (see the photo for what &ldquo;1 spoon&rdquo; looks like).</li>
+<li><b>Break both cats&rsquo; food into small pieces.</b> Luke has no teeth, and he&rsquo;ll eat Leia&rsquo;s food too.</li>
+<li><b>Spread Luke&rsquo;s food out</b> across the bowl with the back of the spoon so he can&rsquo;t scoop it all up at once. This keeps him from eating too fast and throwing up.</li></ul>
+<div class="figs"><figure><img src="img/spoon.jpg" alt="This is 1 spoon." loading="lazy"><figcaption>This is 1 spoon.</figcaption></figure><figure><img src="img/spread.jpg" alt="Luke&rsquo;s food spread out across the bowl so he can&rsquo;t scarf it." loading="lazy"><figcaption>Luke&rsquo;s food spread out across the bowl so he can&rsquo;t scarf it.</figcaption></figure></div>
+
+<h3>If Leia Doesn&rsquo;t Finish</h3><ul>
+<li>Sometimes she walks away. If you bring the bowl to her, she&rsquo;ll often finish it (but not always).</li>
+<li><b>Only a little left?</b> Luke can have it.</li>
+<li><b>She left most of it?</b> Throw it down the sink.</li>
+<li>Please don&rsquo;t leave food lying around; Leia will eat it.</li></ul>
+
+<h3>If Luke Begs Later</h3>
+<div class="callout"><strong>Right now: Luke&rsquo;s throat seems a little sore.</strong><ul>
+<li>If he shows up later begging, give him <b>2 spoons of canned food</b> (instead of kibble).</li>
+<li>Once <b>his voice starts coming back</b>, go back to the normal snack: <b>1 tablespoon of kibble</b>.</li></ul></div>
+<ul><li>He may still be hungry after his canned food and come back for more. That&rsquo;s okay: you can feed him again, just <b>wait about 30&ndash;40 minutes</b> first so he doesn&rsquo;t throw up.</li></ul>
+
+<h3>Bowls</h3><ul><li>Wash the bowls <b>right after they finish eating</b>. They&rsquo;re much easier to clean before the food dries.</li></ul>
+
+<h2 id="litter">Litter Boxes</h2><ul>
+<li>There are <b>2 boxes</b>: one in the <b>master bedroom</b> and one in the <b>master bath</b>.</li>
+<li>Scoop <b>at least twice a day</b>: once in the <b>morning</b> and once in the <b>evening</b>.</li>
+<li>I usually also scoop once <b>midday</b>. If you miss it, that&rsquo;s fine.</li></ul>
+<h3>Using the Litter Disposal Can</h3>
+<p>There&rsquo;s a special trash can next to the boxes. It stays sealed, so there&rsquo;s no smell and you don&rsquo;t need to take litter out to the outside trash.</p>
+<div class="litter"><ol class="steps">
+<li><b>Lift the lid</b> on the can.</li>
+<li><b>Scoop</b> the litter box. Dig around a bit to get the bottom.</li>
+<li>Put the dirty litter <b>on top of the little shelf</b>.</li>
+<li>When you&rsquo;re done, <b>pull the shelf/handle</b> to drop the litter into the bottom.</li>
+<li><b>Close the shelf</b>, then <b>close the lid</b>.</li></ol>
+<figure><img src="img/litter.png" alt="Scoop it, drop it, lock it." loading="lazy"><figcaption>Scoop it, drop it, lock it.</figcaption></figure></div>
+
+<h2 id="trash">Trash &amp; Recycling</h2><ul>
+<li><b>Trash</b> pickup is <b>Friday</b>. You can put the bin out <b>Thursday night</b>.</li>
+<li><b>Recycling</b> pickup is <b>Tuesday</b>. You can put the bin out <b>Monday night</b>.</li></ul>
+
+<h2 id="notes">Contacts / Notes</h2>
+<div class="notes"><p><b>Kyle:</b></p><p><b>Emergency contact:</b></p><p><b>Vet:</b></p><p><b>Other notes:</b></p><p>&nbsp;</p><p>&nbsp;</p></div>
+<footer>Thank you for taking such good care of Luke &amp; Leia!</footer>
+</main></body></html>
