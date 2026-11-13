@@ -32,19 +32,19 @@ figure{margin:0;text-align:center}
 figure img{width:100%;height:auto;border-radius:10px;display:block}
 figcaption{color:var(--muted);font-style:italic;font-size:.92rem;margin-top:4px}
 .ph{background:#eee;border-radius:10px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;color:#999}
-.litter{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;align-items:start}
-ol.steps{padding-left:1.4em} ol.steps li{margin:6px 0}
-.notes p{border-bottom:1px solid #bbb;padding:14px 0 2px;margin:0}
+.litter-fig{margin:14px 0 8px}
+.litter-fig img{width:100%;height:auto;max-height:none;border-radius:10px;display:block}
+ol.steps{padding-left:1.4em;margin:6px 0} ol.steps li{margin:6px 0}
 .dl{text-align:center;margin:10px 0} .dl a{color:var(--teal)}
 footer{text-align:center;color:var(--teal);font-style:italic;margin-top:30px}
-@media (max-width:560px){.cats,.figs,.litter{grid-template-columns:1fr} h1{font-size:1.7rem}}
+@media (max-width:560px){.cats,.figs{grid-template-columns:1fr} h1{font-size:1.7rem}}
 @media print{body{background:#fff;font-size:12pt} main{max-width:none;padding:0} nav,.reset,.dl{display:none}
- h2{break-after:avoid} figure,.card,.callout,.checklist li,.litter{break-inside:avoid} figure img{max-height:3in;width:auto;margin:0 auto}}
+ h2{break-after:avoid} figure,.card,.callout,.checklist li{break-inside:avoid} .figs figure img{max-height:3in;width:auto;margin:0 auto} .litter-fig img{max-height:none;width:100%}}
 </style></head>
 <body><main>
 <header><h1>Cat Sitter Guide</h1><p class="sub">Taking care of Luke &amp; Leia</p>
 <p>Thank you so much for looking after our cats! Start with the daily checklist below. The sections after it have the details.</p>
-<nav><a href="#checklist">Checklist</a><a href="#feeding">Feeding</a><a href="#litter">Litter</a><a href="#trash">Trash</a><a href="#notes">Notes</a></nav>
+<nav><a href="#checklist">Checklist</a><a href="#feeding">Feeding</a><a href="#litter">Litter</a><a href="#trash">Trash</a></nav>
 <p class="dl"><a href="Cat_Sitter_Guide.pdf">Download printable PDF</a></p></header>
 
 <h2 id="cats">Meet the Cats</h2>
@@ -105,20 +105,17 @@ footer{text-align:center;color:var(--teal);font-style:italic;margin-top:30px}
 <li>Scoop <b>at least twice a day</b>: once in the <b>morning</b> and once in the <b>evening</b>.</li>
 <li>I usually also scoop once <b>midday</b>. If you miss it, that&rsquo;s fine.</li></ul>
 <h3>Using the Litter Disposal Can</h3>
-<p>There&rsquo;s a special trash can next to the boxes. It stays sealed, so there&rsquo;s no smell and you don&rsquo;t need to take litter out to the outside trash.</p>
-<div class="litter"><ol class="steps">
+<p>There&rsquo;s a special trash can next to the boxes (a Litter Genie). It stays sealed, so there&rsquo;s no smell and you don&rsquo;t need to take litter out to the outside trash.</p>
+<ol class="steps">
 <li><b>Lift the lid</b> on the can.</li>
 <li><b>Scoop</b> the litter box. Dig around a bit to get the bottom.</li>
 <li>Put the dirty litter <b>on top of the little shelf</b>.</li>
 <li>When you&rsquo;re done, <b>pull the shelf/handle</b> to drop the litter into the bottom.</li>
 <li><b>Close the shelf</b>, then <b>close the lid</b>.</li></ol>
-<figure><img src="img/litter.png" alt="Scoop it, drop it, lock it." loading="lazy"><figcaption>Scoop it, drop it, lock it.</figcaption></figure></div>
+<figure class="litter-fig"><img src="img/litter.png" alt="Litter Genie: Scoop it, drop it, lock it." loading="lazy"><figcaption>Scoop it, drop it, lock it.</figcaption></figure>
 
 <h2 id="trash">Trash &amp; Recycling</h2><ul>
 <li><b>Trash</b> pickup is <b>Friday</b>. You can put the bin out <b>Thursday night</b>.</li>
 <li><b>Recycling</b> pickup is <b>Tuesday</b>. You can put the bin out <b>Monday night</b>.</li></ul>
-
-<h2 id="notes">Contacts / Notes</h2>
-<div class="notes"><p><b>Kyle:</b></p><p><b>Emergency contact:</b></p><p><b>Vet:</b></p><p><b>Other notes:</b></p><p>&nbsp;</p><p>&nbsp;</p></div>
 <footer>Thank you for taking such good care of Luke &amp; Leia!</footer>
 </main></body></html>
