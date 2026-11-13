@@ -1,0 +1,30 @@
+name: Bootstrap site binaries
+on:
+  push:
+    branches: [main]
+jobs:
+  bootstrap:
+    if: contains(github.event.head_commit.message, 'bootstrap payloads')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode binaries
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, base64, pathlib
+          payload = json.loads(pathlib.Path("_payload.json").read_text())
+          for path, b64 in payload.items():
+              dest = pathlib.Path(path)
+              dest.parent.mkdir(parents=True, exist_ok=True)
+              dest.write_bytes(base64.b64decode(b64))
+              print("wrote", dest, dest.stat().st_size)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add img/spoon.jpg img/spread.jpg img/litter.png img/luke.jpg img/leia.jpg Cat_Sitter_Guide.pdf
+          git rm -f _payload.json
+          git commit -m "Update site images and PDF"
+          git push
